@@ -2170,7 +2170,7 @@ def multi_matrix(context,ops):
 
 # code to save the matrix (useful for big ones, too hard to cut and paste from the console)
   print("saving to: saved-matrix.txt")
-  file = open("saved-matrix.txt",'w','utf-8')
+  file = codecs.open("saved-matrix.txt",'w','utf-8')
   file.write("sa: matrix[" + ",".join(ops[::-1]) + "]\n")
   file.write(matrix)
   file.close()  
@@ -3036,7 +3036,7 @@ def pretty_print_table(one,context,params,strict=False,rank=False):
   
 # code to save the table (useful for big ones, too hard to cut and paste from the console)
   print("saving to: saved-table.txt")
-  file = open("saved-table.txt",'w','utf-8')
+  file = codecs.open("saved-table.txt",'w','utf-8')
   file.write("sa: table[" + params + "]\n")
   file.write(s)
   file.close()  
