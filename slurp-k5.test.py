@@ -17,11 +17,12 @@
 import sys
 import os.path
 import time
-import urllib.request
+import urllib
 #from urllib.request import urlopen
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag, Comment, NavigableString, SoupStrainer, BeautifulSoap
 import gzip
 import re
+import parsley
 #import json
 
 from the_semantic_db_code import *
@@ -286,7 +287,7 @@ for k in range( hi, lo, -1):
 #             process_poll(C,working_poll)
           except:
             continue
-        
+##        
 
 ### download and learn poll result
 
